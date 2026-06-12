@@ -9,12 +9,21 @@ const moments = [
 
 const finalLetter = `Rafaelly,
 
-Eu queria conseguir explicar em palavras o quanto você é especial para mim, mas a verdade é que nem todas as palavras do mundo seriam suficientes.
-Você chegou na minha vida de um jeito único e, aos poucos, foi se tornando meu lugar de paz, meu sorriso mais sincero e uma das partes mais bonitas da minha história.
-Cada momento ao seu lado fica guardado em mim como uma cena que eu gostaria de assistir de novo e de novo. Seu jeito, seu carinho, sua presença e até os pequenos detalhes que talvez você nem perceba fazem meus dias serem melhores.
-Esse site é só uma pequena forma de te mostrar que nossa história merece ser lembrada, cuidada e celebrada. Que cada foto, cada mensagem e cada detalhe aqui te lembre do quanto você é amada.
-Obrigado por ser você. Obrigado por fazer parte da minha vida. Obrigado por ser minha Rafaelly.
-Eu te amo muito, hoje e sempre. ❤️
+Eu queria conseguir explicar em palavras o quanto você é especial para mim, mas a verdade é que nem
+todas as palavras do mundo seriam suficientes.
+Você chegou na minha vida de um jeito único e, aos poucos, foi se tornando meu lugar de paz, meu
+sorriso mais alegre e sincero e uma das partes mais bonitas da minha história.
+Cada momento ao seu lado fica guardado em mim como uma cena que eu gostaria de assistir de novo
+e de novo. Seu jeito, seu carinho, sua presença e até os pequenos detalhes.
+Quando penso no futuro, é impossível não imaginar você fazendo parte dele. Foi você quem
+conseguiu tocar meu coração de uma forma que ninguém mais conseguiu. Você se tornou meu porto
+seguro, minha felicidade nos dias bons e minha força nos dias difíceis.
+E, se existe algo de que eu tenho certeza, é que conhecer você foi uma das melhores coisas que já me
+aconteceram. Obrigado por ser exatamente quem você é, por iluminar meus dias e por fazer minha
+vida mais bonita apenas por você ser você.
+Eu te amo não apenas pelo que você é, mas também pela pessoa que me torno quando estou ao seu
+lado. E, se eu pudesse fazer um pedido, seria apenas continuar criando novas histórias, novas 
+lembranças e novos motivos para sorrirmos juntos, hoje, amanhã e por todos os dias que vierem. ❤️
 
 Com amor,
 Igor`;
