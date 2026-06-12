@@ -1,0 +1,103 @@
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#141414;color:#fff;font-family:Arial,Helvetica,sans-serif}
+.hidden{display:none!important}
+.netflix-logo,.brand{color:#e50914;font-weight:900;letter-spacing:-2px}
+.profiles-screen{min-height:100vh;background:#111;position:relative}
+.netflix-logo{position:absolute;top:34px;left:52px;font-size:40px}
+.profiles-center{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.profiles-center h1{font-size:54px;font-weight:400;margin:0 0 35px}
+.profiles-list{display:flex;gap:36px}
+.profile{background:transparent;border:0;color:#8c8c8c;cursor:pointer;font-size:22px}
+.profile img{width:165px;height:165px;object-fit:cover;border:4px solid transparent;background:#333}
+.profile span{display:block;margin-top:14px}
+.profile.active:hover img{border-color:white}
+.profile.active:hover span{color:white}
+.profile.disabled{cursor:default;opacity:.72}
+.profile.disabled:hover img{border-color:transparent}
+.main-profile:hover img{box-shadow:0 0 0 4px rgba(229,9,20,.65)}
+.manage{margin-top:70px;background:transparent;color:#888;border:1px solid #777;padding:13px 34px;font-size:18px;letter-spacing:5px}
+.topbar{height:72px;display:flex;align-items:center;gap:34px;padding:0 48px;position:fixed;top:0;left:0;right:0;z-index:10;background:linear-gradient(#080808,transparent)}
+.brand{font-size:30px}
+.topbar nav{display:flex;gap:22px;color:#ddd}
+.topbar nav a{color:#ddd;text-decoration:none;cursor:pointer}
+.mini-profile{margin-left:auto;background:#e50914;color:#fff;border:0;border-radius:4px;padding:9px 15px}
+.intro{position:fixed;inset:0;background:#000;z-index:200;display:flex;align-items:center;justify-content:center;flex-direction:column}
+.intro-content{text-align:center;animation:introSequence 6.2s ease forwards}
+.intro-presents{color:#e50914;font-size:64px;font-weight:900;letter-spacing:3px;text-shadow:0 0 30px rgba(229,9,20,.35)}
+.intro p{font-size:26px;color:#f3f3f3;letter-spacing:1px;margin-top:24px;line-height:1.45}
+@keyframes introSequence{0%{opacity:0;transform:scale(.96)}18%{opacity:1;transform:scale(1)}72%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(1.04)}}
+.hero{height:76vh;background:linear-gradient(90deg,#050505 0%,rgba(5,5,5,.72) 38%,rgba(5,5,5,.15)),url('assets/banner.jpg');background-size:cover;background-position:center;display:flex;align-items:center;padding:90px 55px 0}
+.hero-content{max-width:620px}
+.series{color:#e50914;font-weight:800;letter-spacing:3px}
+.hero h1{font-size:68px;margin:10px 0}
+.description{font-size:21px;line-height:1.35;color:#eee}
+.hero-actions button{border:0;border-radius:5px;padding:14px 28px;margin-right:12px;font-weight:800;font-size:17px;cursor:pointer}
+.hero-actions .dark{background:rgba(109,109,110,.75);color:white}
+.rows{margin-top:-70px;padding:0 48px 60px;position:relative;z-index:2}
+.rows h2{font-size:25px;margin:28px 0 14px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:16px}
+.card{background:#222;border:0;color:white;text-align:left;border-radius:6px;overflow:hidden;cursor:pointer;transition:.2s}
+.card:hover{transform:scale(1.05);box-shadow:0 15px 45px rgba(0,0,0,.55)}
+.card img{width:100%;height:260px;object-fit:cover;display:block}
+.small .card img{height:180px}
+.card-title{padding:12px;font-weight:700}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.82);z-index:99;display:flex;align-items:center;justify-content:center;padding:20px}
+.modal-card{width:min(900px,96vw);background:#181818;border-radius:12px;overflow:hidden;position:relative;box-shadow:0 20px 80px #000}
+.close{position:absolute;right:16px;top:12px;background:#111;color:white;border:0;border-radius:50%;font-size:34px;width:48px;height:48px;cursor:pointer}
+.modal-card img{width:100%;height:430px;object-fit:cover}
+.modal-text{padding:26px}
+.modal-text h2{margin:0 0 12px;font-size:32px}
+.modal-text p{font-size:20px;line-height:1.5;color:#eee}
+.final-letter{margin-top:70px;max-width:900px;min-height:540px;background:linear-gradient(135deg,#1d1d1d,#101010);border-left:5px solid #e50914;border-radius:10px;padding:34px 38px;box-shadow:0 20px 60px rgba(0,0,0,.45)}
+.final-letter h2{font-size:38px;margin:5px 0 22px}
+.typed-letter{white-space:pre-wrap;font-size:22px;line-height:1.65;color:#f2f2f2;min-height:330px}
+.type-cursor{display:inline-block;color:#e50914;font-size:30px;font-weight:800;animation:blink .7s infinite}
+@keyframes blink{50%{opacity:0}}
+@media(max-width:700px){.netflix-logo{font-size:30px;left:22px}.profiles-center h1{font-size:34px}.profiles-list{gap:18px;flex-wrap:wrap;justify-content:center}.profile img{width:110px;height:110px}.topbar{padding:0 18px}.topbar nav{display:none}.intro-presents{font-size:36px}.intro p{font-size:20px}.hero{padding:80px 24px 0}.hero h1{font-size:42px}.rows{padding:0 20px 45px}.cards{grid-template-columns:repeat(2,1fr)}.card img{height:210px}.modal-card img{height:300px}.final-letter{padding:26px 22px}.typed-letter{font-size:18px}}
+
+.letter-btn{padding:16px 28px;border:none;border-radius:8px;background:#e50914;color:#fff;font-weight:bold;cursor:pointer}
+.letter-overlay{position:fixed;inset:0;background:rgba(0,0,0,.9);display:flex;align-items:center;justify-content:center;z-index:99999}
+.letter-paper{background:#f7f0df;color:#222;max-width:800px;width:90%;height:80vh;padding:30px;border-radius:12px;overflow:auto;animation:openLetter .7s ease}
+@keyframes openLetter{from{transform:scale(.2) rotateX(90deg);opacity:0}to{transform:scale(1);opacity:1}}
+
+
+.close-letter{
+  position:sticky;
+  top:0;
+  float:right;
+  width:42px;
+  height:42px;
+  border:none;
+  border-radius:50%;
+  background:#e50914;
+  color:#fff;
+  font-size:22px;
+  font-weight:900;
+  cursor:pointer;
+  transition:.3s;
+  z-index:50;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 8px 25px rgba(229,9,20,.35);
+}
+
+.close-letter:hover{
+  transform:scale(1.08);
+  background:#ff1b26;
+}
+
+.letter-paper h2{
+  color:#111;
+  margin-top:10px;
+}
+
+.letter-paper .typed-letter{
+  color:#222;
+  font-family:Georgia, 'Times New Roman', serif;
+}
+
+.letter-paper .type-cursor{
+  color:#e50914;
+}
