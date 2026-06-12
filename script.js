@@ -1,10 +1,10 @@
 const moments = [
   { title:'Nosso começo', img:'assets/foto1.jpg', msg:'Tudo começou de uma forma simples, mas sem eu perceber você se tornou a parte mais importante dos meus dias.' },
   { title:'Seu sorriso', img:'assets/foto2.jpg', msg:'Existem muitos lugares bonitos no mundo, mas poucos conseguem transmitir a paz que sinto quando vejo você sorrir.' },
-  { title:'Meu lugar favorito', img:'assets/foto3.jpg', msg:'Fale que seu lugar favorito é perto dela, independente de onde vocês estejam.' },
+  { title:'Meu lugar favorito', img:'assets/foto3.jpg', msg:'Entre tantos lugares, o meu favorito sempre vai ser nos seus braços.' },
   { title:'Nossos momentos', img:'assets/foto4.jpg', msg:'Use essa parte para lembrar de uma viagem, passeio, encontro ou momento marcante.' },
   { title:'Dia dos Namorados', img:'assets/foto5.jpg', msg:'Feliz Dia dos Namorados, meu amor. Esse site é só uma pequena forma de mostrar o quanto você é especial pra mim.' },
-  { title:'Para sempre nós', img:'assets/foto6.jpg', msg:'Finalize com uma promessa, declaração ou frase que só vocês dois entendem.' }
+  { title:'Para sempre nós', img:'assets/foto6.jpg', msg:'Que a gente continue escolhendo o abraço um do outro todos os dias, descobrindo que o nosso lugar favorito é um ao outro.' }
 ];
 
 const finalLetter = `Rafaelly,
