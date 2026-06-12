@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix | Rafaelly</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section id="profiles" class="profiles-screen">
+    <div class="netflix-logo">NETFLIX</div>
+    <main class="profiles-center">
+      <h1>Quem está assistindo?</h1>
+      <div class="profiles-list">
+        <button class="profile disabled" type="button" aria-label="Perfil Convidado indisponível">
+          <img src="assets/perfil-convidado.jpg" onerror="this.src='assets/perfil-padrao1.svg'" alt="Perfil Convidado">
+          <span>Convidado</span>
+        </button>
+        <button class="profile active main-profile" type="button" onclick="enterNetflix()" aria-label="Entrar no perfil Rafaelly">
+          <img src="assets/perfil-rafaelly.jpg" onerror="this.src='assets/placeholder-rafaelly.svg'" alt="Perfil Rafaelly">
+          <span>Rafaelly</span>
+        </button>
+        <button class="profile disabled" type="button" aria-label="Perfil Casal indisponível">
+          <img src="assets/perfil-casal.jpg" onerror="this.src='assets/perfil-padrao2.svg'" alt="Perfil Casal">
+          <span>Casal</span>
+        </button>
+      </div>
+      <button class="manage" type="button">GERENCIAR PERFIS</button>
+    </main>
+  </section>
+
+  <section id="intro" class="intro hidden">
+    <div class="intro-content">
+      <div class="intro-presents">NETFLIX APRESENTA</div>
+      <p>Uma história de amor<br>baseada em fatos reais ❤️</p>
+    </div>
+  </section>
+
+  <section id="app" class="app hidden">
+    <header class="topbar">
+      <div class="brand">NETFLIX</div>
+      <nav><a>Nossa História</a><a>Momentos</a><a>Fotos</a><a href="#carta-final">Carta Final</a></nav>
+      <button class="mini-profile" onclick="backProfiles()">Rafaelly</button>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <p class="series">SÉRIE ORIGINAL NETFLIX</p>
+        <h1>Rafaelly & Igor</h1>
+        <p class="description">Uma história feita de detalhes, risadas, carinho e momentos que merecem ser eternizados.</p>
+        <div class="hero-actions">
+          <button onclick="openMoment(0)">▶ Assistir</button>
+          <button class="dark" onclick="openMoment(1)">ℹ Mais informações</button>
+        </div>
+      </div>
+    </section>
+
+    <main class="rows">
+      <h2>Momentos que eu amo em nós</h2>
+      <div class="cards" id="cards"></div>
+
+      <h2>Mensagens especiais</h2>
+      <div class="cards small" id="messages"></div>
+
+      <section id="carta-final" class="final-letter">
+        <p class="series">MENSAGEM ESPECIAL</p>
+        <h2>Um presente final ❤️</h2>
+        <button id="openLetterBtn" class="letter-btn" onclick="openLetter()">💌 DE IGOR PARA RAFAELLY</button>
+      </section>
+      <div id="letterOverlay" class="letter-overlay hidden">
+        <div class="letter-paper">
+          <button class="close-letter" onclick="closeLetter()" aria-label="Fechar carta">✕</button>
+          <h2>Para Rafaelly ❤️</h2>
+          <div id="typedLetter" class="typed-letter"></div>
+          <span id="typeCursor" class="type-cursor hidden">|</span>
+        </div>
+      </div>
+    </main>
+  </section>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-card">
+      <button class="close" onclick="closeModal()">×</button>
+      <img id="modalImg" src="" alt="Momento">
+      <div class="modal-text">
+        <h2 id="modalTitle"></h2>
+        <p id="modalMsg"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
